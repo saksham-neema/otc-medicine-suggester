@@ -1,0 +1,146 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; /* Dark background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* Use flexbox to center content horizontally and vertically */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-width: 100vw; /* Take full viewport width */
+  min-height: 100vh; /* Take full viewport height */
+  overflow: auto; /* Allow scrolling if content overflows */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  padding: 20px; /* Add some padding around the edges */
+}
+
+/* Adjust the app-container to take more width */
+.app-container {
+  width: 100%; /* Take full width of its parent (which is body with padding) */
+  max-width: 800px; /* But don't exceed 800px for better readability on very wide screens */
+  margin: 0; /* Remove auto margin as flexbox handles centering */
+  padding: 2rem;
+  text-align: center;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  color: #61dafb; /* React blue */
+  margin-bottom: 1.5rem;
+}
+
+.symptom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+label {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ccc;
+  text-align: left; /* Align label text to the left */
+}
+
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: #eee;
+  font-size: 1em;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.5);
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Center the button within the flex column */
+  width: fit-content; /* Make button only as wide as its content */
+}
+
+button:hover:not(:disabled) {
+  background-color: #4fa3d1;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.suggestion-box {
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  text-align: left; /* Keep suggestion text left-aligned */
+}
+
+.suggestion-box h2 {
+  color: #61dafb;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.suggestion-box p {
+  color: #eee;
+  line-height: 1.6;
+}
+
+.disclaimer {
+  font-size: 0.85em;
+  color: #aaa;
+  margin-top: 1.5rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  button {
+    width: 100%; /* Full width button on small screens */
+  }
+}

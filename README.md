@@ -1,10 +1,10 @@
 💊 OTC Medicine Suggester
 Live Demo: (https://otc-medicine-suggester-1.onrender.com/)
 
-![screenshot](./public/Screenshot%202025-09-15%20203059.png)
-![screenshot](./public/Screenshot%202025-09-15%20203236.png)
-![screenshot](./public/Screenshot%202025-09-15%20203252.png)
-![screenshot](./public/Screenshot%202025-09-16%20145637.png)
+![screenshot](./client/public/Screenshot%202025-09-15%20203059.png)
+![screenshot](./client/public/Screenshot%202025-09-15%20203236.png)
+![screenshot](./client/public/Screenshot%202025-09-15%20203252.png)
+![screenshot](./client/public/Screenshot%202025-09-16%20145637.png)
 
 📝 Project Description
 The OTC Medicine Suggester is a full-stack web application designed to provide users with quick, AI-powered suggestions for over-the-counter (OTC) medicines based on their symptoms. The application features a simple and intuitive frontend where users can input their symptoms. This information is then sent to a powerful AI model, which generates relevant and helpful medicine suggestions.
